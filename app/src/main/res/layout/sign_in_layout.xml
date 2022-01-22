@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@drawable/image_blr_1">
+    <LinearLayout
+        android:id="@+id/info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/edtphone"
+            android:textCursorDrawable="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat"
+            android:hint="PHONE NUMBER"
+            android:inputType="phone"
+            android:maxLength="10"
+            android:textColor="@android:color/white"
+            android:textColorHint="@color/white"
+            android:textSize="25sp"
+            android:gravity="center">
+        </EditText>
+
+        <EditText
+            android:id="@+id/edtpassword"
+            android:textCursorDrawable="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat"
+            android:gravity="center"
+            android:hint="PASSWORD"
+            android:inputType="textPassword"
+            android:maxLength="10"
+            android:textColor="@android:color/white"
+            android:textColorHint="@color/white"
+            android:textSize="25sp">
+        </EditText>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign  In  With"
+        android:layout_marginTop="520dp"
+        android:textColor="@color/white"
+        android:layout_marginLeft="160dp"
+        android:textStyle="italic"/>
+
+    <LinearLayout
+        android:id="@+id/social_icons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="550dp"
+        android:layout_marginLeft="55dp">
+        <ImageView
+            android:layout_width="72dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/G_logo">
+        </ImageView>
+        <ImageView
+            android:layout_width="72dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/F_logo">
+        </ImageView>
+        <ImageView
+            android:layout_width="72dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/W_logo">
+        </ImageView>
+        <ImageView
+            android:layout_width="72dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/tweet">
+        </ImageView>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/signIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/button_round"
+        android:fontFamily="@font/montserrat"
+        android:shadowColor="@android:color/black"
+        android:layout_marginBottom="50dp"
+        android:text="Sign In"
+        android:textColor="@android:color/white" />
+
+
+
+
+</RelativeLayout>
